@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/work_proj/work_proj.srcs/sources_1/imports/xpm_fifo/xpm_fifo_sync_wrap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xpm_fifo_sync_wrap'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/work_proj/work_proj.srcs/sim_1/imports/tb/tb_xpm_sync_wrap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_xpm_sync_fifo_wrap'

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/sync_fifo_porting/sync_fifo_porting.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/src/rtl/xpm_fifo/xpm_fifo_sync_wrap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xpm_fifo_sync_wrap'

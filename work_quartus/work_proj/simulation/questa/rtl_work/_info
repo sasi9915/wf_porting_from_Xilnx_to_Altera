@@ -1,0 +1,158 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/work_proj/simulation/questa
+T_opt
+!i145 1
+!i144 0
+!s110 1777374946
+V_G^5QO_=Rhe7C@>F9m8EC1
+04 23 3 work tb_intel_sync_fifo_wrap sim 1
+=1-98bd80e373e9-69f096e1-c6713-7ca3c
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U3 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2025.2;82
+Ealtera_sync_fifo
+Z2 w1777366973
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R1
+Z5 8/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/ip/fifo/altera_sync_fifo.vhd
+Z6 F/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/ip/fifo/altera_sync_fifo.vhd
+l0
+L43 1
+V^j08d==]H<OdNQ>>iCAW22
+!s100 6;^<V6e@jjl5Sn`4f0c8a2
+Z7 OL;C;2025.2;82
+31
+Z8 !s110 1777374912
+!i10b 1
+Z9 !s108 1777374912.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/ip/fifo/altera_sync_fifo.vhd|
+Z11 !s107 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/ip/fifo/altera_sync_fifo.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Asyn
+R3
+R4
+Z14 DEx4 work 16 altera_sync_fifo 0 22 ^j08d==]H<OdNQ>>iCAW22
+!i122 0
+l102
+L61 81
+VeNJc>8JH>9n?UnW2KFB?83
+!s100 NGOk`Fi?:oQ>ZX7k>FC[z2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Eintel_fifo_sync_wrap
+Z15 w1777374852
+Z16 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R3
+R4
+!i122 1
+R1
+Z17 8/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_down_counter/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd
+Z18 F/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_down_counter/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd
+l0
+L5 1
+VBL>g2C7D<dO=Y1Bh`fdi@3
+!s100 mebFYU[l`;Yjb0Pn>h8i^1
+R7
+31
+R8
+!i10b 1
+R9
+Z19 !s90 -reportprogress|300|-93|-work|work|/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_down_counter/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd|
+Z20 !s107 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_down_counter/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd|
+!i113 0
+R12
+R13
+Artl
+R14
+R16
+R3
+R4
+Z21 DEx4 work 20 intel_fifo_sync_wrap 0 22 BL>g2C7D<dO=Y1Bh`fdi@3
+!i122 1
+l38
+L26 53
+VMT7io3Q[nI@Fe9nOIDhd:0
+!s100 OI8g?agM_RbOI_a1GHfLN3
+R7
+31
+R8
+!i10b 1
+R9
+R19
+R20
+!i113 0
+R12
+R13
+Etb_intel_sync_fifo_wrap
+Z22 w1777371603
+R16
+R3
+R4
+!i122 2
+R1
+Z23 8/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_intel_sync_fifo_wrap.vhd
+Z24 F/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_intel_sync_fifo_wrap.vhd
+l0
+L5 1
+VN`6iU1Z>ZM@=5D0VbYI_82
+!s100 ;AGDZ`gjNo9`Uh13KKiTn0
+R7
+32
+Z25 !s110 1777374940
+!i10b 1
+Z26 !s108 1777374940.000000
+Z27 !s90 -reportprogress|300|-work|work|/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_intel_sync_fifo_wrap.vhd|
+Z28 !s107 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_intel_sync_fifo_wrap.vhd|
+!i113 0
+Z29 o-work work
+R13
+Asim
+R21
+R16
+R3
+R4
+DEx4 work 23 tb_intel_sync_fifo_wrap 0 22 N`6iU1Z>ZM@=5D0VbYI_82
+!i122 2
+l37
+L8 155
+VRcKFkYOd2TkgG^jTO@DC>0
+!s100 nzA=b<Olg]Uh7P:LCHML71
+R7
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 0
+R29
+R13
