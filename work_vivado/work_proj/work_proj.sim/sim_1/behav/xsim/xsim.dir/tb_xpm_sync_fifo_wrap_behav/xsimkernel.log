@@ -1,4 +1,4 @@
-Running: xsim.dir/tb_xpm_sync_fifo_wrap_behav/xsimk -simmode gui -wdb tb_xpm_sync_fifo_wrap_behav.wdb -simrunnum 0 -socket 56619
+Running: xsim.dir/tb_xpm_sync_fifo_wrap_behav/xsimk -simmode gui -wdb tb_xpm_sync_fifo_wrap_behav.wdb -simrunnum 0 -socket 50153
 Design successfully loaded
-Design Loading Memory Usage: 180572 KB (Peak: 180572 KB)
-Design Loading CPU Usage: 740 ms
+Design Loading Memory Usage: 33400 KB (Peak: 33788 KB)
+Design Loading CPU Usage: 20 ms

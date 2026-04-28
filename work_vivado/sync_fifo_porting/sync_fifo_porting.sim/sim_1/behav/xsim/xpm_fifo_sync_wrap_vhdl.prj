@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../../src/rtl/xpm_fifo/xpm_fifo_sync_wrap.vhd" \
-
-# Do not sort compile order
-nosort

@@ -26,7 +26,7 @@
 # 
 # vcom -93 -work work {/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/ip/fifo/altera_sync_fifo.vhd}
 # Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 16:45:12 on Apr 28,2026
+# Start time: 17:51:20 on Apr 28,2026
 # vcom -reportprogress 300 -93 -work work /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/ip/fifo/altera_sync_fifo.vhd 
 # ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
 # -- Loading package STANDARD
@@ -34,11 +34,11 @@
 # -- Loading package std_logic_1164
 # -- Compiling entity altera_sync_fifo
 # -- Compiling architecture SYN of altera_sync_fifo
-# End time: 16:45:12 on Apr 28,2026, Elapsed time: 0:00:00
+# End time: 17:51:20 on Apr 28,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_down_counter/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd}
 # Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 16:45:12 on Apr 28,2026
+# Start time: 17:51:20 on Apr 28,2026
 # vcom -reportprogress 300 -93 -work work /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_down_counter/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd 
 # ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
 # -- Loading package STANDARD
@@ -48,12 +48,12 @@
 # -- Compiling entity intel_fifo_sync_wrap
 # -- Compiling architecture rtl of intel_fifo_sync_wrap
 # -- Loading entity altera_sync_fifo
-# End time: 16:45:12 on Apr 28,2026, Elapsed time: 0:00:00
+# End time: 17:51:20 on Apr 28,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vcom -reportprogress 300 -work work /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_intel_sync_fifo_wrap.vhd
 # Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 16:45:40 on Apr 28,2026
+# Start time: 17:51:42 on Apr 28,2026
 # vcom -reportprogress 300 -work work /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_intel_sync_fifo_wrap.vhd 
 # ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
 # -- Loading package STANDARD
@@ -63,12 +63,12 @@ vcom -reportprogress 300 -work work /home/sasindu/work/wf_porting/wf_porting_fro
 # -- Compiling entity tb_intel_sync_fifo_wrap
 # -- Compiling architecture sim of tb_intel_sync_fifo_wrap
 # -- Loading entity intel_fifo_sync_wrap
-# End time: 16:45:40 on Apr 28,2026, Elapsed time: 0:00:00
+# End time: 17:51:42 on Apr 28,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim work.tb_intel_sync_fifo_wrap
 # ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
 # vsim work.tb_intel_sync_fifo_wrap 
-# Start time: 16:45:45 on Apr 28,2026
+# Start time: 17:51:45 on Apr 28,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
 # Loading std.standard
@@ -94,26 +94,125 @@ add wave -position end  sim:/tb_intel_sync_fifo_wrap/o_empty
 add wave -position end  sim:/tb_intel_sync_fifo_wrap/o_almost_full
 add wave -position end  sim:/tb_intel_sync_fifo_wrap/o_almost_empty
 add wave -position end  sim:/tb_intel_sync_fifo_wrap/write_count
+add wave -position end  sim:/tb_intel_sync_fifo_wrap/read_count
 run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
 run
+# ** Note: Latency = 0
+#    Time: 1120 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 12
+#    Time: 1140 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 14
+#    Time: 1160 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 16
+#    Time: 1180 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 18
+#    Time: 1200 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 20
+#    Time: 1220 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 22
+#    Time: 1240 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 24
+#    Time: 1260 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 26
+#    Time: 1280 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 28
+#    Time: 1300 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 30
+#    Time: 1320 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 32
+#    Time: 1340 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 34
+#    Time: 1360 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 36
+#    Time: 1380 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 38
+#    Time: 1400 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 40
+#    Time: 1420 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 42
+#    Time: 1440 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 44
+#    Time: 1460 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 46
+#    Time: 1480 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 48
+#    Time: 1500 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 50
+#    Time: 1520 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 52
+#    Time: 1540 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 54
+#    Time: 1560 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 56
+#    Time: 1580 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 58
+#    Time: 1600 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 60
+#    Time: 1620 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 62
+#    Time: 1640 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 64
+#    Time: 1660 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 66
+#    Time: 1680 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 68
+#    Time: 1700 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 70
+#    Time: 1720 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 72
+#    Time: 1740 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 74
+#    Time: 1760 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 76
+#    Time: 1780 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 78
+#    Time: 1800 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 80
+#    Time: 1820 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 82
+#    Time: 1840 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 84
+#    Time: 1860 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 86
+#    Time: 1880 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 88
+#    Time: 1900 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 90
+#    Time: 1920 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 92
+#    Time: 1940 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 94
+#    Time: 1960 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 96
+#    Time: 1980 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 98
+#    Time: 2 us  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
+# ** Note: Latency = 100
+#    Time: 2020 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 102
+#    Time: 2040 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 104
+#    Time: 2060 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 106
+#    Time: 2080 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Latency = 108
+#    Time: 2100 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
 # ** Note: TB done. Writes accepted=50, reads accepted=50
 #    Time: 2100 ns  Iteration: 1  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: =================================
+#    Time: 2100 ns  Iteration: 2  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Simulation Summary:
+#    Time: 2100 ns  Iteration: 2  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Total cycles = 111
+#    Time: 2100 ns  Iteration: 2  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Writes = 50
+#    Time: 2100 ns  Iteration: 2  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Reads  = 50
+#    Time: 2100 ns  Iteration: 2  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: Max FIFO usage = 25
+#    Time: 2100 ns  Iteration: 2  Instance: /tb_intel_sync_fifo_wrap
+# ** Note: =================================
+#    Time: 2100 ns  Iteration: 2  Instance: /tb_intel_sync_fifo_wrap

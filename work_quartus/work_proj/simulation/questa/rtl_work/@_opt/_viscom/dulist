@@ -3,4 +3,4 @@
 1 6 scfifo 8 behavior 65 /home/sasindu/altera_lite/25.1std/questa_fse/intel/vhdl/altera_mf 1 65 1024 0 1736 0
 1 16 altera_sync_fifo 3 syn 111 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/work_proj/simulation/questa/rtl_work 1 65 0 0 182 0
 1 20 intel_fifo_sync_wrap 3 rtl 111 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/work_proj/simulation/questa/rtl_work 1 65 0 0 321 0
-1 23 tb_intel_sync_fifo_wrap 3 sim 111 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/work_proj/simulation/questa/rtl_work 1 65 0 0 335 0
+1 23 tb_intel_sync_fifo_wrap 3 sim 111 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/work_proj/simulation/questa/rtl_work 1 65 0 0 472 0

@@ -1,7 +1,7 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../work_proj.srcs/sources_1/imports/xpm_fifo/xpm_fifo_sync_wrap.vhd" \
-"../../../../work_proj.srcs/sim_1/imports/tb/tb_xpm_sync_wrap.vhd" \
+"../../../../../src/rtl/xpm_fifo/xpm_fifo_sync_wrap.vhd" \
+"../../../../../tb/tb_xpm_sync_wrap.vhd" \
 
 # Do not sort compile order
 nosort
