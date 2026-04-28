@@ -1,0 +1,35 @@
+|down_counter
+i_clk => r_counter[0].CLK
+i_clk => r_counter[1].CLK
+i_clk => r_counter[2].CLK
+i_clk => r_counter[3].CLK
+i_clk => r_counter[4].CLK
+i_clk => r_counter[5].CLK
+i_clk => r_counter[6].CLK
+i_clk => r_counter[7].CLK
+i_rst_n => r_counter[0].PRESET
+i_rst_n => r_counter[1].PRESET
+i_rst_n => r_counter[2].PRESET
+i_rst_n => r_counter[3].PRESET
+i_rst_n => r_counter[4].PRESET
+i_rst_n => r_counter[5].PRESET
+i_rst_n => r_counter[6].PRESET
+i_rst_n => r_counter[7].PRESET
+i_en => r_counter[0].ENA
+i_en => r_counter[7].ENA
+i_en => r_counter[6].ENA
+i_en => r_counter[5].ENA
+i_en => r_counter[4].ENA
+i_en => r_counter[3].ENA
+i_en => r_counter[2].ENA
+i_en => r_counter[1].ENA
+o_count[0] << r_counter[0].DB_MAX_OUTPUT_PORT_TYPE
+o_count[1] << r_counter[1].DB_MAX_OUTPUT_PORT_TYPE
+o_count[2] << r_counter[2].DB_MAX_OUTPUT_PORT_TYPE
+o_count[3] << r_counter[3].DB_MAX_OUTPUT_PORT_TYPE
+o_count[4] << r_counter[4].DB_MAX_OUTPUT_PORT_TYPE
+o_count[5] << r_counter[5].DB_MAX_OUTPUT_PORT_TYPE
+o_count[6] << r_counter[6].DB_MAX_OUTPUT_PORT_TYPE
+o_count[7] << r_counter[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -4,30 +4,30 @@ use ieee.numeric_std.all;
 
 -- 8-bit synchronous down counter with active-low asynchronous reset and enable.
 entity down_counter is
-    generic (
-        WIDTH : positive := 8
+    generic(
+        WIDTH : positive := 8           -- Width of the counter
     );
-    port (
-        clk   : in  std_logic;
-        rst_n : in  std_logic;                          -- active-low reset
-        en    : in  std_logic;                          -- count when '1'
-        q     : out std_logic_vector(WIDTH-1 downto 0)
+    port(
+        i_clk   : in  std_logic;        -- Clock input
+        i_rst_n : in  std_logic;        -- Active-low asynchronous reset
+        i_en    : in  std_logic;        -- Enable signal
+        o_count : out std_logic_vector(WIDTH - 1 downto 0) -- Output count value
     );
-end entity down_counter;
+end down_counter;
 
 architecture rtl of down_counter is
-    signal count_reg : unsigned(WIDTH-1 downto 0) := (others => '0');
+    signal r_counter : unsigned(WIDTH - 1 downto 0) := (others => '0'); -- Internal counter signal
 begin
-    process (clk, rst_n)
+    process(i_clk, i_rst_n)
     begin
-        if rst_n = '0' then
-            count_reg <= (others => '1');              -- preload max value on reset
-        elsif rising_edge(clk) then
-            if en = '1' then
-                count_reg <= count_reg - 1;
+        if i_rst_n = '0' then
+            r_counter <= (others => '1'); -- Reset counter to
+        elsif rising_edge(i_clk) then
+            if i_en = '1' then
+                r_counter <= r_counter - 1;
             end if;
         end if;
     end process;
 
-    q <= std_logic_vector(count_reg);
+    o_count <= std_logic_vector(r_counter);
 end architecture rtl;

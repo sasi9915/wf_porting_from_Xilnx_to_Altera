@@ -1,0 +1,230 @@
+{
+  "version": 4,
+  "name": "wf_porting_from_Xilnx_to_Altera",
+  "projectBaseDir": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera",
+  "compilationGroupModel": {
+    "groups": [
+      {
+        "language": "Vhdl",
+        "currentWorkingDirectory": {
+          "platformUri": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Design/",
+          "fileUri": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/"
+        },
+        "resources": [
+          "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/down_counter.vhd",
+          "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_down_counter.vhd"
+        ],
+        "includePaths": [],
+        "includeFallbackToLocalDirectory": false,
+        "additionalEnvVars": {},
+        "initialDefines": [],
+        "continueFrom": null,
+        "inferOrder": true,
+        "allowUndefine": false,
+        "allowUndefineAll": false,
+        "conditionalVariables": {},
+        "target": {
+          "project": "wf_porting_from_Xilnx_to_Altera",
+          "version": "default",
+          "target": "hdl"
+        }
+      }
+    ],
+    "resourceActualTargets": {
+      "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/down_counter.vhd": {
+        "project": "wf_porting_from_Xilnx_to_Altera",
+        "version": "default",
+        "target": "hdl"
+      },
+      "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_down_counter.vhd": {
+        "project": "wf_porting_from_Xilnx_to_Altera",
+        "version": "default",
+        "target": "hdl"
+      }
+    }
+  },
+  "linkedResources": [
+    {
+      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera",
+      "target": "virtual:/virtual",
+      "type": 2
+    },
+    {
+      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Common%20Libraries",
+      "target": "virtual:/virtual",
+      "type": 2
+    },
+    {
+      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Common%20Libraries/STD",
+      "target": "sigasiresource:/vhdl/2019/STD",
+      "type": 2
+    },
+    {
+      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Common%20Libraries/IEEE",
+      "target": "sigasiresource:/vhdl/2019/IEEE",
+      "type": 2
+    },
+    {
+      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Common%20Libraries/IEEE%20Synopsys",
+      "target": "sigasiresource:/vhdl/2019/IEEE%20Synopsys",
+      "type": 2
+    },
+    {
+      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Design",
+      "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera",
+      "type": 2
+    },
+    {
+      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets",
+      "target": "virtual:/virtual",
+      "type": 2
+    },
+    {
+      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl",
+      "target": "virtual:/virtual",
+      "type": 2
+    },
+    {
+      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work",
+      "target": "virtual:/virtual",
+      "type": 2
+    },
+    {
+      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/down_counter.vhd",
+      "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/vhdl/down_counter.vhd",
+      "type": 1
+    },
+    {
+      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_down_counter.vhd",
+      "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/vhdl/tb_down_counter.vhd",
+      "type": 1
+    }
+  ],
+  "resourceInformation": {
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/Common%20Libraries": {
+      "library": "not mapped",
+      "version": null,
+      "isLibraryFile": false
+    },
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work": {
+      "library": "work",
+      "version": null,
+      "isLibraryFile": false
+    },
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/down_counter.vhd": {
+      "library": null,
+      "version": "VHDL 2019",
+      "isLibraryFile": false
+    },
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_down_counter.vhd": {
+      "library": null,
+      "version": "VHDL 2019",
+      "isLibraryFile": false
+    },
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Common%20Libraries/STD": {
+      "library": "std",
+      "version": "VHDL 2019",
+      "isLibraryFile": true
+    },
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Common%20Libraries/IEEE": {
+      "library": "ieee",
+      "version": "VHDL 2019",
+      "isLibraryFile": true
+    },
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Common%20Libraries/IEEE%20Synopsys": {
+      "library": "ieee",
+      "version": "VHDL 2019",
+      "isLibraryFile": true
+    },
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera": {
+      "library": null,
+      "version": "VHDL 2019",
+      "isLibraryFile": false
+    }
+  },
+  "virtualFolderContents": {
+    "platform:/resource": [
+      {
+        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera",
+        "target": "virtual:/virtual",
+        "type": 2
+      }
+    ],
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera": [
+      {
+        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Common%20Libraries",
+        "target": "virtual:/virtual",
+        "type": 2
+      },
+      {
+        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Design",
+        "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera",
+        "type": 2
+      },
+      {
+        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets",
+        "target": "virtual:/virtual",
+        "type": 2
+      }
+    ],
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Common%20Libraries": [
+      {
+        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Common%20Libraries/STD",
+        "target": "sigasiresource:/vhdl/2019/STD",
+        "type": 2
+      },
+      {
+        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Common%20Libraries/IEEE",
+        "target": "sigasiresource:/vhdl/2019/IEEE",
+        "type": 2
+      },
+      {
+        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Common%20Libraries/IEEE%20Synopsys",
+        "target": "sigasiresource:/vhdl/2019/IEEE%20Synopsys",
+        "type": 2
+      }
+    ],
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets": [
+      {
+        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl",
+        "target": "virtual:/virtual",
+        "type": 2
+      }
+    ],
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl": [
+      {
+        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work",
+        "target": "virtual:/virtual",
+        "type": 2
+      }
+    ],
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work": [
+      {
+        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/down_counter.vhd",
+        "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/vhdl/down_counter.vhd",
+        "type": 1
+      },
+      {
+        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_down_counter.vhd",
+        "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/vhdl/tb_down_counter.vhd",
+        "type": 1
+      }
+    ]
+  },
+  "manualTargets": {
+    "hdl": {
+      "directoryPath": "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera",
+      "libraryMapping": {
+        "": [],
+        "vhdl/down_counter.vhd": [
+          "work"
+        ],
+        "vhdl/tb_down_counter.vhd": [
+          "work"
+        ]
+      },
+      "declaredDependencies": []
+    }
+  },
+  "configurableIncludes": {}
+}

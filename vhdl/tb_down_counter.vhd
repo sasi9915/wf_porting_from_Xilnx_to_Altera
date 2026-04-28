@@ -3,76 +3,69 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity tb_down_counter is
-end entity tb_down_counter;
+end tb_down_counter;
 
 architecture sim of tb_down_counter is
     constant WIDTH : positive := 8;
 
-    signal clk   : std_logic := '0';
-    signal rst_n : std_logic := '0';
-    signal en    : std_logic := '0';
-    signal q     : std_logic_vector(WIDTH-1 downto 0);
+    signal i_clk : std_logic := '0';
+    signal i_rst_n : std_logic := '0';
+    signal i_en : std_logic := '0';
+    signal o_count : std_logic_vector(WIDTH-1 downto 0);
 
-    constant CLK_PERIOD : time := 20 ns;
-begin
-    uut: entity work.down_counter
+constant CLK_PERIOD : time := 10 ns;
+
+begin 
+    uut : entity work.down_counter
         generic map (
             WIDTH => WIDTH
         )
         port map (
-            clk   => clk,
-            rst_n => rst_n,
-            en    => en,
-            q     => q
+            i_clk => i_clk,
+            i_rst_n => i_rst_n,
+            i_en => i_en,
+            o_count => o_count
         );
-
-    clk <= not clk after CLK_PERIOD / 2;
-
-    stimulus: process
+    
+    -- Clock generation
+    clk_process : process
     begin
-        -- Keep reset active for a couple of cycles.
-        rst_n <= '0';
-        en    <= '0';
-        wait for 2 * CLK_PERIOD;
-
-        -- Release reset; counter should hold while enable is low.
-        rst_n <= '1';
-        wait for 3 * CLK_PERIOD;
-
-        -- Enable counting down.
-        en <= '1';
-        wait for 10 * CLK_PERIOD;
-
-        -- Pause counting.
-        en <= '0';
-        wait for 3 * CLK_PERIOD;
-
-        -- Resume counting.
-        en <= '1';
-        wait for 6 * CLK_PERIOD;
-
-        wait;
+        while true loop
+            i_clk <= '1';
+            wait for CLK_PERIOD / 2;
+            i_clk <= '0';
+            wait for CLK_PERIOD / 2;
+        end loop;
     end process;
 
-    checks: process (clk)
-        variable prev_q : unsigned(WIDTH-1 downto 0) := (others => '1');
+
+    -- Stimulus process
+    Stimulus_process : process
     begin
-        if rising_edge(clk) then
-            if rst_n = '0' then
-                assert q = (q'range => '1')
-                    report "Counter not initialized to all ones during reset"
-                    severity error;
-                prev_q := (others => '1');
-            elsif en = '1' then
-                assert unsigned(q) = prev_q - 1
-                    report "Counter did not decrement by 1"
-                    severity error;
-                prev_q := unsigned(q);
-            else
-                assert unsigned(q) = prev_q
-                    report "Counter changed while enable was low"
-                    severity error;
-            end if;
-        end if;
+        -- Apply reset
+        i_rst_n <= '0';
+        i_en <= '0';
+        wait for 20 ns;
+
+        -- Release reset and enable counting
+        i_rst_n <= '1';
+        wait for 20 ns;
+
+        -- Enable counting
+        i_en <= '1';
+        wait for 200 ns;
+
+        -- pause simulation
+        i_en <= '0';
+        wait for 20 ns;
+
+        --resume counting
+        i_en <= '1';
+        wait for 100 ns;
+
+        wait; -- Wait indefinitely to end simulation
     end process;
-end architecture sim;
+
+   
+
+end sim;

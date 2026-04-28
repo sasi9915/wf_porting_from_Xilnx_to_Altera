@@ -1,0 +1,148 @@
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 linux_x86_64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do basics_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Altera Starter FPGA Edition-64 vmap 2025.2 Lib Mapping Utility 2025.05 May 31 2025
+# vmap work rtl_work 
+# ** Note: (vmap-220) '/home/sasindu/altera_lite/25.1std/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# Copying /home/sasindu/altera_lite/25.1std/questa_fse/linux_x86_64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/vhdl/down_counter.vhd}
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 17:13:10 on Apr 27,2026
+# vcom -reportprogress 300 -93 -work work /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/vhdl/down_counter.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity down_counter
+# -- Compiling architecture rtl of down_counter
+# End time: 17:13:10 on Apr 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.down_counter
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim work.down_counter 
+# Start time: 17:13:16 on Apr 27,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.down_counter(rtl)#1
+add wave -position end  sim:/down_counter/WIDTH
+add wave -position end  sim:/down_counter/i_clk
+add wave -position end  sim:/down_counter/i_rst_n
+add wave -position end  sim:/down_counter/i_en
+add wave -position end  sim:/down_counter/o_count
+vcom -reportprogress 300 -work work /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/vhdl/tb_down_counter.vhd
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 17:13:50 on Apr 27,2026
+# vcom -reportprogress 300 -work work /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/vhdl/tb_down_counter.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_down_counter
+# -- Compiling architecture sim of tb_down_counter
+# -- Loading entity down_counter
+# End time: 17:13:50 on Apr 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+run
+run
+vsim work.tb_down_counter
+# End time: 17:14:37 on Apr 27,2026, Elapsed time: 0:01:21
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim work.tb_down_counter 
+# Start time: 17:14:37 on Apr 27,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_down_counter(sim)#1
+# Loading work.down_counter(rtl)#1
+add wave -position end  sim:/tb_down_counter/i_clk
+add wave -position end  sim:/tb_down_counter/i_rst_n
+add wave -position end  sim:/tb_down_counter/i_en
+add wave -position end  sim:/tb_down_counter/o_count
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 09:35:01 on Apr 28,2026, Elapsed time: 16:20:24
+# Errors: 0, Warnings: 0

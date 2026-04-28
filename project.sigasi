@@ -1,0 +1,16 @@
+{
+    "name": "wf_porting_from_Xilnx_to_Altera",
+    "targets": {
+        "hdl": {
+            // Sigasi support is enabled in HDL files that are part of a library.
+            "libraryMapping": {
+                // TODO: Add files or folders to libraries,
+                // e.g., to add all HDL files to 'work', use
+                // "": "work"
+                "": [],
+                "vhdl/down_counter.vhd": "work",
+                "vhdl/tb_down_counter.vhd": "work"
+            }
+        }
+    }
+}
