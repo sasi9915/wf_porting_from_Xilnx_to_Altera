@@ -103,7 +103,7 @@
     },
     {
       "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/intel_fifo_sync_wrap.vhd",
-      "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_down_counter/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd",
+      "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd",
       "type": 1
     },
     {
@@ -233,7 +233,7 @@
     "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work": [
       {
         "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/intel_fifo_sync_wrap.vhd",
-        "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_down_counter/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd",
+        "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd",
         "type": 1
       },
       {
@@ -286,6 +286,9 @@
           "work"
         ],
         "work_vivado/tb/tb_xpm_sync_wrap.vhd": [
+          "work"
+        ],
+        "work_quartus/src/rtl/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd": [
           "work"
         ]
       },

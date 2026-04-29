@@ -6,7 +6,7 @@
       "library": "work",
       "resources": [
         {
-          "path": "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_down_counter/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd",
+          "path": "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd",
           "hdlVersion": "VHDL 2019",
           "kind": "COMPILE_FILE"
         },
