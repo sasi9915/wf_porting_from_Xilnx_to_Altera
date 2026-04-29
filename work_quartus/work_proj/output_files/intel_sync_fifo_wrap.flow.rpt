@@ -1,5 +1,5 @@
 Flow report for intel_sync_fifo_wrap
-Wed Apr 29 10:49:13 2026
+Wed Apr 29 16:23:45 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Wed Apr 29 10:49:13 2026           ;
+; Flow Status                     ; Successful - Wed Apr 29 16:23:45 2026           ;
 ; Quartus Prime Version           ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                   ; intel_sync_fifo_wrap                            ;
 ; Top-level Entity Name           ; intel_fifo_sync_wrap                            ;
@@ -68,7 +68,7 @@ on the Quartus Prime software download page.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 04/29/2026 10:49:07  ;
+; Start date & time ; 04/29/2026 16:23:34  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; intel_sync_fifo_wrap ;
 +-------------------+----------------------+
@@ -79,7 +79,7 @@ on the Quartus Prime software download page.
 +-------------------------------------+----------------------------------------+----------------------+----------------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value        ; Entity Name          ; Section Id                        ;
 +-------------------------------------+----------------------------------------+----------------------+----------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 167939678630889.177743994714487        ; --                   ; --                   ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 167939678630889.177746001418713        ; --                   ; --                   ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                   ; --                   ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                   ; --                   ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                   ; --                   ; eda_board_design_signal_integrity ;
@@ -104,8 +104,8 @@ on the Quartus Prime software download page.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 559 MB              ; 00:00:13                           ;
-; Total                ; 00:00:06     ; --                      ; --                  ; 00:00:13                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 558 MB              ; 00:00:28                           ;
+; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:28                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

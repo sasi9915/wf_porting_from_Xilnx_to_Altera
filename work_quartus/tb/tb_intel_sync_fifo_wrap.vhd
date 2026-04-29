@@ -290,7 +290,7 @@ begin
         report "DATA MISMATCH IN SINGLE WR/RD TEST: expected=123, got=" & integer'image(to_integer(unsigned(o_q)))
         severity error;
 
-        report "Single write/read latency cycles = " & integer'image(latency_cycles_v) severity note;
+        report "Single write/read latency cycles = " & integer'image((latency_cycles_v)-1) severity note;
         wait until rising_edge(i_clk);
         i_rdreq <= '0';
 
