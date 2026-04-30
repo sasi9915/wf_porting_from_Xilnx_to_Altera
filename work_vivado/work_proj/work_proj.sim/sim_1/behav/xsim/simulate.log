@@ -1,0 +1,6 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Note: Single write/read latency cycles = 3
+Time: 1120 ns  Iteration: 1  Process: /tb_xpm_sync_fifo_wrap/single_wr_rd_proc  File: /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/tb/tb_xpm_sync_wrap.vhd
+Note: Single write/read test passed. Data read = 123
+Time: 1130 ns  Iteration: 1  Process: /tb_xpm_sync_fifo_wrap/single_wr_rd_proc  File: /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/tb/tb_xpm_sync_wrap.vhd
