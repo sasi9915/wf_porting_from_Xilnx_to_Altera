@@ -1,0 +1,25 @@
+{
+    "name": "wf_porting_from_Xilnx_to_Altera",
+    "targets": {
+        "hdl": {
+            // Sigasi support is enabled in HDL files that are part of a library.
+            "libraryMapping": {
+                // TODO: Add files or folders to libraries,
+                // e.g., to add all HDL files to 'work', use
+                // "": "work"
+                "": [],
+                "vhdl/down_counter.vhd": "work",
+                "vhdl/tb_down_counter.vhd": "work",
+                "work_vivado/src/rtl/xpm_fifo/xpm_fifo_sync_wrap.vhd": "work",
+                "work_vivado/src/rtl/xpm_fifo/tb_xpm_sync_wrap.vhd": "work",
+                "work_vivado/work_proj/work_proj.srcs/sim_1/imports/xpm_fifo/tb_xpm_sync_wrap.vhd": "work",
+                "work_vivado/work_proj/work_proj.srcs/sources_1/imports/xpm_fifo/xpm_fifo_sync_wrap.vhd": "work",
+                "work_quartus/src/rtl/test_down_counter/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd": "work",
+                "work_quartus/src/rtl/test_down_counter/test_altera_sync_fifo/tb_intel_fifo_sync_wrap.vhd": "work",
+                "work_quartus/tb/tb_intel_sync_fifo_wrap.vhd": "work",
+                "work_vivado/tb/tb_xpm_sync_wrap.vhd": "work",
+                "work_quartus/src/rtl/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd": "work"
+            }
+        }
+    }
+}

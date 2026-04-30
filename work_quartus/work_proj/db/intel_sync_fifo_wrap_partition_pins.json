@@ -1,0 +1,169 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_q[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_q[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_q[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_q[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_q[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_q[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_q[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o_q[7]",
+					"strict" : false
+				},
+				{
+					"name" : "o_q[8]",
+					"strict" : false
+				},
+				{
+					"name" : "o_q[9]",
+					"strict" : false
+				},
+				{
+					"name" : "o_q_val",
+					"strict" : false
+				},
+				{
+					"name" : "o_usedw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_usedw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_usedw[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_usedw[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_usedw[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_usedw[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_usedw[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o_usedw[7]",
+					"strict" : false
+				},
+				{
+					"name" : "o_usedw[8]",
+					"strict" : false
+				},
+				{
+					"name" : "o_usedw[9]",
+					"strict" : false
+				},
+				{
+					"name" : "o_usedw[10]",
+					"strict" : false
+				},
+				{
+					"name" : "o_full",
+					"strict" : false
+				},
+				{
+					"name" : "o_empty",
+					"strict" : false
+				},
+				{
+					"name" : "o_almost_full",
+					"strict" : false
+				},
+				{
+					"name" : "o_almost_empty",
+					"strict" : false
+				},
+				{
+					"name" : "i_rdreq",
+					"strict" : false
+				},
+				{
+					"name" : "i_wrreq",
+					"strict" : false
+				},
+				{
+					"name" : "i_clk",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "i_resetn",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
