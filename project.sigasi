@@ -18,7 +18,12 @@
                 "work_quartus/src/rtl/test_down_counter/test_altera_sync_fifo/tb_intel_fifo_sync_wrap.vhd": "work",
                 "work_quartus/tb/tb_intel_sync_fifo_wrap.vhd": "work",
                 "work_vivado/tb/tb_xpm_sync_wrap.vhd": "work",
-                "work_quartus/src/rtl/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd": "work"
+                "work_quartus/src/rtl/test_altera_sync_fifo/intel_fifo_sync_wrap.vhd": "work",
+                "work_quartus/src/rtl/test_altera_async_fifo/lpm_async_fifo_wrap.vhd": "work",
+                "misc/tb_fir_top.vhd": "work",
+                "work_vivado/tb/tb_xpm_async_wrap.vhd": "work",
+                "work_vivado/src/rtl/xpm_fifo/xpm_fifo_async_wrap.vhd": "work",
+                "work_quartus/tb/tb_lpm_async_fifo_wrap.vhd": "work"
             }
         }
     }
