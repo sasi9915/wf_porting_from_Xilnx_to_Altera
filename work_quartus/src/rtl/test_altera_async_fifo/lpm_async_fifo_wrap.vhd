@@ -10,9 +10,8 @@ entity lpm_async_fifo_wrap is
         g_DATA_WIDTH             : natural := 10;
         g_DEPTH                  : natural := 2048;
         g_FWFT_MODE_ENA          : boolean := true;
-        g_ALMOST_FULL_THRESHOLD  : natural := 2048-128;
+        g_ALMOST_FULL_THRESHOLD  : natural := 2048 - 128;
         g_ALMOST_EMPTY_THRESHOLD : natural := 128
-       
     );
     port(
         i_wr_resetn       : in  std_logic;
@@ -70,22 +69,20 @@ begin
         generic map(
             add_ram_output_register => "OFF",
             add_usedw_msb_bit       => "OFF",
-            clocks_are_synchronized  => "FALSE",
+            clocks_are_synchronized => "FALSE",
             delay_rdusedw           => 1,
             delay_wrusedw           => 1,
             intended_device_family  => "Cyclone V",
             lpm_numwords            => g_DEPTH,
             lpm_showahead           => f_showahead_sel(g_FWFT_MODE_ENA),
             lpm_width               => g_DATA_WIDTH,
-            lpm_width_r              => g_DATA_WIDTH,
-            lpm_widthu             => f_log2_size(g_DEPTH),
-            lpm_widthu_r             => f_log2_size(g_DEPTH),
+            lpm_widthu              => f_log2_size(g_DEPTH),
             overflow_checking       => "ON",
-            rdsync_delaypipe       => 4,
+            rdsync_delaypipe        => 5,
             underflow_checking      => "ON",
             use_eab                 => "ON",
-            write_aclr_synch          => "OFF",
-            wrsync_delaypipe       => 4,
+            write_aclr_synch        => "OFF",
+            wrsync_delaypipe        => 5,
             lpm_hint                => "UNUSED",
             lpm_type                => "dcfifo"
         )
@@ -107,7 +104,10 @@ begin
 
     process(i_rd_clk)
     begin
-        if i_rd_clk'event and i_rd_clk = '1' then
+        if i_wr_resetn = '0' then
+            r_q_val <= '0';
+
+        elsif i_rd_clk'event and i_rd_clk = '1' then
             r_q_val <= i_rdreq and not w_rd_empty;
         end if;
     end process;

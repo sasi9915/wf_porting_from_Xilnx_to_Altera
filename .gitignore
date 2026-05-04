@@ -1,0 +1,3 @@
+# Ignore generated Vivado/Quartus project work directories
+work_vivado/work_proj/
+work_quartus/work_proj/

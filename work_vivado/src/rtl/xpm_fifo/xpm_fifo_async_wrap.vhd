@@ -93,7 +93,7 @@ begin
         CDC_SYNC_STAGES => 3,                                           -- DECIMAL
         DOUT_RESET_VALUE => "0",                                        -- String
         ECC_MODE => "no_ecc",                                           -- String
-        FIFO_MEMORY_TYPE => "g_TYPE",                                   -- String
+        FIFO_MEMORY_TYPE => g_TYPE,                                     -- String
         FIFO_READ_LATENCY => f_read_latency_sel(g_FWFT_MODE_ENA),       -- DECIMAL
         FIFO_WRITE_DEPTH => g_DEPTH,                                    -- DECIMAL
         FULL_RESET_VALUE => 0,                                          -- DECIMAL

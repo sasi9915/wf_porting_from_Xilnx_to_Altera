@@ -21,7 +21,22 @@
           "kind": "COMPILE_FILE"
         },
         {
+          "path": "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_lpm_async_fifo_wrap.vhd",
+          "hdlVersion": "VHDL 2019",
+          "kind": "COMPILE_FILE"
+        },
+        {
+          "path": "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/src/rtl/xpm_fifo/xpm_fifo_async_wrap.vhd",
+          "hdlVersion": "VHDL 2019",
+          "kind": "COMPILE_FILE"
+        },
+        {
           "path": "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/src/rtl/xpm_fifo/xpm_fifo_sync_wrap.vhd",
+          "hdlVersion": "VHDL 2019",
+          "kind": "COMPILE_FILE"
+        },
+        {
+          "path": "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/tb/tb_xpm_async_wrap.vhd",
           "hdlVersion": "VHDL 2019",
           "kind": "COMPILE_FILE"
         },
