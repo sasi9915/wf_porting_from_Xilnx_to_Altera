@@ -23,7 +23,12 @@
                 "misc/tb_fir_top.vhd": "work",
                 "work_vivado/tb/tb_xpm_async_wrap.vhd": "work",
                 "work_vivado/src/rtl/xpm_fifo/xpm_fifo_async_wrap.vhd": "work",
-                "work_quartus/tb/tb_lpm_async_fifo_wrap.vhd": "work"
+                "work_quartus/tb/tb_lpm_async_fifo_wrap.vhd": "work",
+                "work_quartus/src/rtl/porting_devider_gen/divider_gen_wrap.vhd": "work",
+                "work_quartus/ip/divider_gen/divider_generator.vhd": "work",
+                "work_quartus/src/rtl/porting_devider_gen/divider_gen_wrap_tready.vhd": "work",
+                "work_vivado/tb/tb_divider_gen.vhd": "work",
+                "work_quartus/tb/tb_lpm_divider.vhd": "work"
             }
         }
     }
