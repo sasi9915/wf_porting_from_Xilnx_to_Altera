@@ -1,17 +1,21 @@
 m255
 K4
 z2
-Z0 !s12c _opt2
+Z0 !s12c _opt
 Z1 !s99 nomlopt
-Z2 !s12c _opt
+Z2 !s12c _opt1
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
 R1
 R2
 R1
 R0
-R1
-!s12c _opt1
-R1
-R2
 R1
 !s11e vcom 2025.2 2025.05, May 31 2025
 13
@@ -24,140 +28,162 @@ Z3 d/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/w
 T_opt
 !i145 1
 !i144 0
-!s110 1777882457
-VQ;`R:n?0aEB2lPhM96PWg1
-Z4 04 22 3 work tb_lpm_async_fifo_wrap sim 1
-=1-98bd80e373e9-69f85559-4608d-1593c
+!s110 1778124876
+V[HKVNAa;G4KC2API>O7NR0
+04 14 3 work tb_lpm_divider sim 1
+=1-98bd80e373e9-69fc084c-65ebe-7ce1c
 R1
-Z5 !s12f OEM100
-Z6 !s12b OEM100
-Z7 !s124 OEM10U2 
-Z8 !s135 nogc
-Z9 o-quiet -auto_acc_if_foreign -work work
-Z10 tCvgOpt 0
+Z4 !s12f OEM100
+Z5 !s12b OEM100
+Z6 !s124 OEM10U3 
+Z7 !s135 nogc
+Z8 o-quiet -auto_acc_if_foreign -work work
+Z9 tCvgOpt 0
 n@_opt
-Z11 OL;O;2025.2;82
-R3
+Z10 OL;O;2025.2;82
 T_opt1
 !i145 1
 !i144 0
-!s110 1777873391
-VBiz^XNiVZ1`8NbNgJ[zdE2
-R4
-=1-98bd80e373e9-69f831ef-887ac-cca5
+!s110 1778069490
+VPN8`R]Q3a;AfL0QKbA1If3
+04 17 3 work tb_divider_tready sim 1
+=1-98bd80e373e9-69fb2ff2-325df-72e62
 R1
+R4
 R5
 R6
 R7
 R8
 R9
-R10
 n@_opt1
-R11
-R3
-T_opt2
-!i145 1
-!i144 0
-!s110 1777884594
-V6bcND36Z7=doHL9=WbQj23
-R4
-=1-98bd80e373e9-69f85db2-6e998-17822
-R1
-R5
-R6
-R7
-R8
-R9
 R10
-n@_opt2
-R11
-Elpm_async_fifo_wrap
-Z12 w1777884520
-Z13 DPx9 altera_mf 20 altera_mf_components 0 22 50VKBiXXd1l`N;@a6hzj`0
-Z14 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z15 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z16 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R3
+Edivider_generator
+Z11 w1777959046
+Z12 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z13 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 0
 R3
-Z17 8/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_altera_async_fifo/lpm_async_fifo_wrap.vhd
-Z18 F/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_altera_async_fifo/lpm_async_fifo_wrap.vhd
+Z14 8/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/ip/divider_gen/divider_generator.vhd
+Z15 F/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/ip/divider_gen/divider_generator.vhd
 l0
-L8 1
-VT_fiambFSM9N3e=i7ZfeB1
-!s100 eTNb2<C=D;9goZzHmbQSG3
-Z19 OL;C;2025.2;82
+L43 1
+V^z;4PQa36486<NP8@FCIZ0
+!s100 DGi15Ee?iShGQdDQi7zl;0
+Z16 OL;C;2025.2;82
 31
-Z20 !s110 1777884583
+Z17 !s110 1778124779
 !i10b 1
-Z21 !s108 1777884583.000000
-Z22 !s90 -reportprogress|300|-93|-work|work|/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_altera_async_fifo/lpm_async_fifo_wrap.vhd|
-Z23 !s107 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_altera_async_fifo/lpm_async_fifo_wrap.vhd|
+Z18 !s108 1778124779.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/ip/divider_gen/divider_generator.vhd|
+Z20 !s107 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/ip/divider_gen/divider_generator.vhd|
 !i113 0
-Z24 o-93 -work work
-Z25 tExplicit 1 CvgOpt 0
-Artl
+Z21 o-93 -work work
+Z22 tExplicit 1 CvgOpt 0
+Asyn
+R12
 R13
-R14
-R15
-R16
-Z26 DEx4 work 19 lpm_async_fifo_wrap 0 22 T_fiambFSM9N3e=i7ZfeB1
+Z23 DEx4 work 17 divider_generator 0 22 ^z;4PQa36486<NP8@FCIZ0
 !i122 0
-l64
-L34 92
-V;Md5?dRCKP?cL>i[9Mk_Q0
-!s100 =4;kaIoT0o<@im<^WB36>0
-R19
+l83
+L56 53
+V`HhHLD<z:fgl<dfg4ERH30
+!s100 N6DQ;<<nGGB057g=5hJBW1
+R16
 31
-R20
+R17
 !i10b 1
+R18
+R19
+R20
+!i113 0
 R21
 R22
-R23
-!i113 0
-R24
-R25
-Etb_lpm_async_fifo_wrap
-Z27 w1777882421
-R14
-R15
-R16
+Ehfh_snr_est_divider
+Z24 w1778061345
+Z25 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R12
+R13
 !i122 1
 R3
-Z28 8/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_lpm_async_fifo_wrap.vhd
-Z29 F/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_lpm_async_fifo_wrap.vhd
+Z26 8/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/porting_devider_gen/divider_gen_wrap.vhd
+Z27 F/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/porting_devider_gen/divider_gen_wrap.vhd
+l0
+L19 1
+V5cX1LSzCZ8O4<m]W1=9A^0
+!s100 K4=_Zi8ozS4HkM@mQKAFU0
+R16
+31
+R17
+!i10b 1
+R18
+Z28 !s90 -reportprogress|300|-93|-work|work|/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/porting_devider_gen/divider_gen_wrap.vhd|
+Z29 !s107 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/porting_devider_gen/divider_gen_wrap.vhd|
+!i113 0
+R21
+R22
+Artl
+R23
+R25
+R12
+R13
+Z30 DEx4 work 19 hfh_snr_est_divider 0 22 5cX1LSzCZ8O4<m]W1=9A^0
+!i122 1
+l71
+L42 107
+VM3UHKgj0MYICKkTJbaG781
+!s100 >nYARkdYQZF;o`YSAKLFY1
+R16
+31
+R17
+!i10b 1
+R18
+R28
+R29
+!i113 0
+R21
+R22
+Etb_lpm_divider
+Z31 w1778124865
+R25
+R12
+R13
+!i122 5
+R3
+Z32 8/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_lpm_divider.vhd
+Z33 F/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_lpm_divider.vhd
 l0
 L5 1
-VXW^zKjVJPUgKaToVzfWP12
-!s100 ZQJI0;JcCHS;P87OIe0Ga1
-R19
-32
-Z30 !s110 1777884591
-!i10b 1
-Z31 !s108 1777884591.000000
-Z32 !s90 -reportprogress|300|-work|work|/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_lpm_async_fifo_wrap.vhd|
-Z33 !s107 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_lpm_async_fifo_wrap.vhd|
-!i113 0
-Z34 o-work work
-R25
-Asim
-R13
-R26
-R14
-R15
+VoX9:5e[f53aFU;D<SSScW2
+!s100 4JR[RiH289UE]V5_fMYcT1
 R16
-DEx4 work 22 tb_lpm_async_fifo_wrap 0 22 XW^zKjVJPUgKaToVzfWP12
-!i122 1
-l39
-L8 211
-V3aDgmgQz_DYHn0fH__mU`2
-!s100 dSLh8a8>Th[E_iN=5CMzD3
-R19
 32
-R30
+Z34 !s110 1778124871
 !i10b 1
-R31
-R32
-R33
+Z35 !s108 1778124871.000000
+Z36 !s90 -reportprogress|300|-work|work|/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_lpm_divider.vhd|
+Z37 !s107 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_lpm_divider.vhd|
 !i113 0
-R34
+Z38 o-work work
+R22
+Asim
+R30
 R25
+R12
+R13
+DEx4 work 14 tb_lpm_divider 0 22 oX9:5e[f53aFU;D<SSScW2
+!i122 5
+l24
+L8 100
+VSV5ml_?gUC]gZBCFA6Ooa1
+!s100 h^aTFCJW?bcQSgh1o]>1C3
+R16
+32
+R34
+!i10b 1
+R35
+R36
+R37
+!i113 0
+R38
+R22

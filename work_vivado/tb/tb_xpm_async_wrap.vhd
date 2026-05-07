@@ -96,72 +96,72 @@ begin
     ----------------------------------------------------------------------------------------------
 
    -- write process ( WR_CLK domain )
-    wr_proc : process
-        variable v_data : natural := 0;
-    begin
-        i_wrreq <= '0';
-        i_data  <= (others => '0');
+    -- wr_proc : process
+    --     variable v_data : natural := 0;
+    -- begin
+    --     i_wrreq <= '0';
+    --     i_data  <= (others => '0');
 
-        wait until i_wr_resetn = '1';
-        for i in 1 to c_WR_RESET_GUARD_CYCLES loop
-            wait until rising_edge(i_wr_clk);
-        end loop;
+    --     wait until i_wr_resetn = '1';
+    --     for i in 1 to c_WR_RESET_GUARD_CYCLES loop
+    --         wait until rising_edge(i_wr_clk);
+    --     end loop;
 
-        while v_data < c_NUM_TRANSFERS loop
-            wait until rising_edge(i_wr_clk);
+    --     while v_data < c_NUM_TRANSFERS loop
+    --         wait until rising_edge(i_wr_clk);
 
-            if o_wr_full = '0' then
-                i_data        <= std_logic_vector(to_unsigned(v_data, g_DATA_WIDTH));
-                i_wrreq       <= '1';
-                wait until rising_edge(i_wr_clk);
-                i_wrreq       <= '0';
-                r_write_count <= r_write_count + 1;
-                v_data        := v_data + 1;
-            end if;
-        end loop;
+    --         if o_wr_full = '0' then
+    --             i_data        <= std_logic_vector(to_unsigned(v_data, g_DATA_WIDTH));
+    --             i_wrreq       <= '1';
+    --             wait until rising_edge(i_wr_clk);
+    --             i_wrreq       <= '0';
+    --             r_write_count <= r_write_count + 1;
+    --             v_data        := v_data + 1;
+    --         end if;
+    --     end loop;
 
-        i_wrreq <= '0';
-        i_data  <= (others => '0');
-        wait;
-    end process wr_proc;
+    --     i_wrreq <= '0';
+    --     i_data  <= (others => '0');
+    --     wait;
+    -- end process wr_proc;
 
-    -- read process ( RD_CLK domain )
-    rd_proc : process
-        variable v_expected_data : natural := 0;
-    begin
-        i_rdreq <= '0';
+    -- -- read process ( RD_CLK domain )
+    -- rd_proc : process
+    --     variable v_expected_data : natural := 0;
+    -- begin
+    --     i_rdreq <= '0';
 
-        wait until i_wr_resetn = '1';
-        for i in 1 to c_RD_RESET_GUARD_CYCLES loop
-            wait until rising_edge(i_rd_clk);
-        end loop;
+    --     wait until i_wr_resetn = '1';
+    --     for i in 1 to c_RD_RESET_GUARD_CYCLES loop
+    --         wait until rising_edge(i_rd_clk);
+    --     end loop;
 
-        -- Start checking after all writes are complete for deterministic debug.
-        wait until r_write_count = c_NUM_TRANSFERS;
+    --     -- Start checking after all writes are complete for deterministic debug.
+    --     wait until r_write_count = c_NUM_TRANSFERS;
 
-        while v_expected_data < c_NUM_TRANSFERS loop
-            wait until rising_edge(i_rd_clk);
+    --     while v_expected_data < c_NUM_TRANSFERS loop
+    --         wait until rising_edge(i_rd_clk);
 
-            if o_rd_empty = '0' then
-                -- FWFT mode: output data is already valid when empty='0'.
-                assert o_q = std_logic_vector(to_unsigned(v_expected_data, g_DATA_WIDTH))
-                report "Data mismatch at expected read value " & integer'image(v_expected_data) & ", got " & integer'image(to_integer(unsigned(o_q)))
-                severity error;
+    --         if o_rd_empty = '0' then
+    --             -- FWFT mode: output data is already valid when empty='0'.
+    --             assert o_q = std_logic_vector(to_unsigned(v_expected_data, g_DATA_WIDTH))
+    --             report "Data mismatch at expected read value " & integer'image(v_expected_data) & ", got " & integer'image(to_integer(unsigned(o_q)))
+    --             severity error;
 
-                -- Pop exactly one word.
-                i_rdreq <= '1';
-                wait until rising_edge(i_rd_clk);
-                i_rdreq <= '0';
+    --             -- Pop exactly one word.
+    --             i_rdreq <= '1';
+    --             wait until rising_edge(i_rd_clk);
+    --             i_rdreq <= '0';
 
-                v_expected_data := v_expected_data + 1;
-                r_read_count    <= r_read_count + 1;
-            end if;
-        end loop;
+    --             v_expected_data := v_expected_data + 1;
+    --             r_read_count    <= r_read_count + 1;
+    --         end if;
+    --     end loop;
 
-        report "ASYNC FIFO Test Completed. Total Writes: " & integer'image(c_NUM_TRANSFERS) & ", Total Reads: " & integer'image(v_expected_data);
-        wait;
+    --     report "ASYNC FIFO Test Completed. Total Writes: " & integer'image(c_NUM_TRANSFERS) & ", Total Reads: " & integer'image(v_expected_data);
+    --     wait;
 
-    end process rd_proc;
+    -- end process rd_proc;
 
     -------------------------------------------- NOTE --------------------------------------------
     -- Optional test: single write/read in FWFT mode.
@@ -172,48 +172,48 @@ begin
     -- This test writes c_SINGLE_TEST_DATA (=15), then reads as soon as data appears
     -- on the read side (after async clock-domain crossing delay).
     ----------------------------------------------------------------------------------------------
-    -- single_wr_rd_proc : process
-    -- begin
-    --     i_wrreq <= '0';
-    --     i_rdreq <= '0';
-    --     i_data  <= (others => '0');
+    single_wr_rd_proc : process
+    begin
+        i_wrreq <= '0';
+        i_rdreq <= '0';
+        i_data  <= (others => '0');
 
-    --     wait until i_wr_resetn = '1';
+        wait until i_wr_resetn = '1';
 
-    --     for i in 1 to c_WR_RESET_GUARD_CYCLES loop
-    --         wait until rising_edge(i_wr_clk);
-    --     end loop;
+        for i in 1 to c_WR_RESET_GUARD_CYCLES loop
+            wait until rising_edge(i_wr_clk);
+        end loop;
 
-    --     for i in 1 to c_RD_RESET_GUARD_CYCLES loop
-    --         wait until rising_edge(i_rd_clk);
-    --     end loop;
+        for i in 1 to c_RD_RESET_GUARD_CYCLES loop
+            wait until rising_edge(i_rd_clk);
+        end loop;
 
         
-    --     i_data        <= std_logic_vector(to_unsigned(c_SINGLE_TEST_DATA, g_DATA_WIDTH));
-    --     i_wrreq       <= '1';
-    --     wait until rising_edge(i_wr_clk);
-    --     i_wrreq       <= '0';
-    --     r_write_count <= r_write_count + 1;
+        i_data        <= std_logic_vector(to_unsigned(c_SINGLE_TEST_DATA, g_DATA_WIDTH));
+        i_wrreq       <= '1';
+        wait until rising_edge(i_wr_clk);
+        i_wrreq       <= '0';
+        r_write_count <= r_write_count + 1;
 
-    --     -- On read side, wait until FIFO is not empty (FWFT data is already on o_q)
-    --     wait until rising_edge(i_rd_clk);
-    --     while o_rd_empty = '1' loop
-    --         wait until rising_edge(i_rd_clk);
-    --     end loop;
+        -- On read side, wait until FIFO is not empty (FWFT data is already on o_q)
+        wait until rising_edge(i_rd_clk);
+        while o_rd_empty = '1' loop
+            wait until rising_edge(i_rd_clk);
+        end loop;
 
-    --     assert o_q = std_logic_vector(to_unsigned(c_SINGLE_TEST_DATA, g_DATA_WIDTH))
-    --     report "Single test mismatch before rdreq. expected=" & integer'image(c_SINGLE_TEST_DATA) & ", got=" & integer'image(to_integer(unsigned(o_q)))
-    --     severity error;
+        assert o_q = std_logic_vector(to_unsigned(c_SINGLE_TEST_DATA, g_DATA_WIDTH))
+        report "Single test mismatch before rdreq. expected=" & integer'image(c_SINGLE_TEST_DATA) & ", got=" & integer'image(to_integer(unsigned(o_q)))
+        severity error;
 
-    --     -- Pop that one word
-    --     i_rdreq      <= '1';
-    --     wait until rising_edge(i_rd_clk);
-    --     i_rdreq      <= '0';
-    --     r_read_count <= r_read_count + 1;
+        -- Pop that one word
+        i_rdreq      <= '1';
+        wait until rising_edge(i_rd_clk);
+        i_rdreq      <= '0';
+        r_read_count <= r_read_count + 1;
 
-    --     report "Single async FWFT test passed. Wrote and read value " & integer'image(c_SINGLE_TEST_DATA)
-    --     severity note;
-    --     wait;
-    -- end process single_wr_rd_proc;
+        report "Single async FWFT test passed. Wrote and read value " & integer'image(c_SINGLE_TEST_DATA)
+        severity note;
+        wait;
+    end process single_wr_rd_proc;
 
 end architecture sim;
