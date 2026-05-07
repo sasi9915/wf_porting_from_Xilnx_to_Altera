@@ -1,4 +1,4 @@
------------------ * NOTES --------------------
+---------------- * NOTES --------------------
 -- The IP was configured for unsidgned Fixed point divison with 17 bits of fractional precision. 
 -- Remainder Type = Fractional ( Q16.17 ) 
 -- Dividend width = 16 bits , Divisor width = 17 bits ( to accomodate the case of divisor = 1) , m_data_width  = 40 bits

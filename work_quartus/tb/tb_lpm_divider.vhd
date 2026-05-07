@@ -15,7 +15,7 @@ architecture sim of tb_lpm_divider is
     signal s_axis_dividend_tdata  : std_logic_vector(15 downto 0) := (others => '0');
 
     signal s_axis_divisor_tvalid : std_logic                     := '0';
-    signal s_axis_divisor_tdata  : std_logic_vector(23 downto 0) := (others => '0');
+    signal s_axis_divisor_tdata  : std_logic_vector(16 downto 0) := (others => '0');
 
     -- Outputs
     signal m_axis_dout_tvalid : std_logic;
@@ -23,7 +23,14 @@ architecture sim of tb_lpm_divider is
 
 begin
 
-    aclk <= not aclk after 5 ns;
+    clk_gen : process
+    begin
+        aclk <= '1';
+        wait for 5 ns;
+
+        aclk <= '0';
+        wait for 5 ns;
+    end process;
 
     process
     begin
@@ -57,7 +64,7 @@ begin
 
         -- TEST 1: 5 / 2
         s_axis_dividend_tdata <= std_logic_vector(to_unsigned(5, 16));
-        s_axis_divisor_tdata  <= std_logic_vector(to_unsigned(2, 24));
+        s_axis_divisor_tdata  <= std_logic_vector(to_unsigned(2, 17));
 
         s_axis_dividend_tvalid <= '1';
         s_axis_divisor_tvalid  <= '1';
@@ -71,7 +78,7 @@ begin
 
         -- TEST 2: 10 / 3
         s_axis_dividend_tdata <= std_logic_vector(to_unsigned(10, 16));
-        s_axis_divisor_tdata  <= std_logic_vector(to_unsigned(3, 24));
+        s_axis_divisor_tdata  <= std_logic_vector(to_unsigned(3, 17));
 
         s_axis_dividend_tvalid <= '1';
         s_axis_divisor_tvalid  <= '1';
@@ -92,7 +99,7 @@ begin
     begin
         if rising_edge(aclk) then
             if m_axis_dout_tvalid = '1' then
-                report "Output valid: " & integer'image(to_integer(unsigned(m_axis_dout_tdata)));
+                report "RAW Output = " & integer'image(to_integer(unsigned(m_axis_dout_tdata(31 downto 0))));
             end if;
         end if;
     end process;

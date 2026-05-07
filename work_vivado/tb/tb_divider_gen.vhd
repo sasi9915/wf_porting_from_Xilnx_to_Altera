@@ -23,7 +23,13 @@ architecture tb of tb_xilinx_divider is
 
 begin
 
-    aclk <= not aclk after 5 ns;
+    clk_gen : process 
+    begin
+        aclk <= '1';
+        wait for 5 ns;
+        aclk <= '0';
+        wait for 5 ns;
+    end process;
 
     process
     begin
