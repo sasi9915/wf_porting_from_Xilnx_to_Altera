@@ -15,7 +15,7 @@ architecture sim of tb_lpm_divider is
     signal s_axis_dividend_tdata  : std_logic_vector(15 downto 0) := (others => '0');
 
     signal s_axis_divisor_tvalid : std_logic                     := '0';
-    signal s_axis_divisor_tdata  : std_logic_vector(16 downto 0) := (others => '0');
+    signal s_axis_divisor_tdata  : std_logic_vector(23 downto 0) := (others => '0');
 
     -- Outputs
     signal m_axis_dout_tvalid : std_logic;
@@ -64,7 +64,7 @@ begin
 
         -- TEST 1: 5 / 2
         s_axis_dividend_tdata <= std_logic_vector(to_unsigned(5, 16));
-        s_axis_divisor_tdata  <= std_logic_vector(to_unsigned(2, 17));
+        s_axis_divisor_tdata  <= std_logic_vector(to_unsigned(2, 24));
 
         s_axis_dividend_tvalid <= '1';
         s_axis_divisor_tvalid  <= '1';
@@ -78,7 +78,7 @@ begin
 
         -- TEST 2: 10 / 3
         s_axis_dividend_tdata <= std_logic_vector(to_unsigned(10, 16));
-        s_axis_divisor_tdata  <= std_logic_vector(to_unsigned(3, 17));
+        s_axis_divisor_tdata  <= std_logic_vector(to_unsigned(3, 24));
 
         s_axis_dividend_tvalid <= '1';
         s_axis_divisor_tvalid  <= '1';

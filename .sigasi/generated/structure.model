@@ -11,19 +11,21 @@
           "fileUri": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/"
         },
         "resources": [
-          "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/divider_generator.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/divider_gen_wrap.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/divider_gen_wrap_tready.vhd",
+          "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/mult_33_16_wrapper.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/lpm_async_fifo_wrap.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/intel_fifo_sync_wrap.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_intel_sync_fifo_wrap.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_async_fifo_wrap.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_divider.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_divider_tready.vhd",
+          "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_mult_33_16.vhd?@work_quartus/tb",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/xpm_fifo_async_wrap.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/xpm_fifo_sync_wrap.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_divider_gen.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_divider_gen_with_tready.vhd",
+          "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_mult_33_16.vhd?@work_vivado/tb",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_xpm_async_wrap.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_xpm_sync_wrap.vhd"
         ],
@@ -44,17 +46,17 @@
       }
     ],
     "resourceActualTargets": {
-      "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/divider_generator.vhd": {
-        "project": "wf_porting_from_Xilnx_to_Altera",
-        "version": "default",
-        "target": "hdl"
-      },
       "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/divider_gen_wrap.vhd": {
         "project": "wf_porting_from_Xilnx_to_Altera",
         "version": "default",
         "target": "hdl"
       },
       "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/divider_gen_wrap_tready.vhd": {
+        "project": "wf_porting_from_Xilnx_to_Altera",
+        "version": "default",
+        "target": "hdl"
+      },
+      "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/mult_33_16_wrapper.vhd": {
         "project": "wf_porting_from_Xilnx_to_Altera",
         "version": "default",
         "target": "hdl"
@@ -89,6 +91,11 @@
         "version": "default",
         "target": "hdl"
       },
+      "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_mult_33_16.vhd?@work_quartus/tb": {
+        "project": "wf_porting_from_Xilnx_to_Altera",
+        "version": "default",
+        "target": "hdl"
+      },
       "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/xpm_fifo_async_wrap.vhd": {
         "project": "wf_porting_from_Xilnx_to_Altera",
         "version": "default",
@@ -105,6 +112,11 @@
         "target": "hdl"
       },
       "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_divider_gen_with_tready.vhd": {
+        "project": "wf_porting_from_Xilnx_to_Altera",
+        "version": "default",
+        "target": "hdl"
+      },
+      "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_mult_33_16.vhd?@work_vivado/tb": {
         "project": "wf_porting_from_Xilnx_to_Altera",
         "version": "default",
         "target": "hdl"
@@ -168,11 +180,6 @@
       "type": 2
     },
     {
-      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/divider_generator.vhd",
-      "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/ip/divider_gen/divider_generator.vhd",
-      "type": 1
-    },
-    {
       "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/divider_gen_wrap.vhd",
       "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/porting_devider_gen/divider_gen_wrap.vhd",
       "type": 1
@@ -180,6 +187,11 @@
     {
       "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/divider_gen_wrap_tready.vhd",
       "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/porting_devider_gen/divider_gen_wrap_tready.vhd",
+      "type": 1
+    },
+    {
+      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/mult_33_16_wrapper.vhd",
+      "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/porting_multiplier/mult_33_16_wrapper.vhd",
       "type": 1
     },
     {
@@ -213,6 +225,11 @@
       "type": 1
     },
     {
+      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_mult_33_16.vhd?@work_quartus/tb",
+      "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_mult_33_16.vhd",
+      "type": 1
+    },
+    {
       "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/xpm_fifo_async_wrap.vhd",
       "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/src/rtl/xpm_fifo/xpm_fifo_async_wrap.vhd",
       "type": 1
@@ -230,6 +247,11 @@
     {
       "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_divider_gen_with_tready.vhd",
       "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/tb/tb_divider_gen_with_tready.vhd",
+      "type": 1
+    },
+    {
+      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_mult_33_16.vhd?@work_vivado/tb",
+      "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/tb/tb_mult_33_16.vhd",
       "type": 1
     },
     {
@@ -254,17 +276,17 @@
       "version": null,
       "isLibraryFile": false
     },
-    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/divider_generator.vhd": {
-      "library": null,
-      "version": "VHDL 2019",
-      "isLibraryFile": false
-    },
     "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/divider_gen_wrap.vhd": {
       "library": null,
       "version": "VHDL 2019",
       "isLibraryFile": false
     },
     "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/divider_gen_wrap_tready.vhd": {
+      "library": null,
+      "version": "VHDL 2019",
+      "isLibraryFile": false
+    },
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/mult_33_16_wrapper.vhd": {
       "library": null,
       "version": "VHDL 2019",
       "isLibraryFile": false
@@ -299,6 +321,11 @@
       "version": "VHDL 2019",
       "isLibraryFile": false
     },
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_mult_33_16.vhd?@work_quartus/tb": {
+      "library": null,
+      "version": "VHDL 2019",
+      "isLibraryFile": false
+    },
     "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/xpm_fifo_async_wrap.vhd": {
       "library": null,
       "version": "VHDL 2019",
@@ -315,6 +342,11 @@
       "isLibraryFile": false
     },
     "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_divider_gen_with_tready.vhd": {
+      "library": null,
+      "version": "VHDL 2019",
+      "isLibraryFile": false
+    },
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_mult_33_16.vhd?@work_vivado/tb": {
       "library": null,
       "version": "VHDL 2019",
       "isLibraryFile": false
@@ -408,11 +440,6 @@
     ],
     "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work": [
       {
-        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/divider_generator.vhd",
-        "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/ip/divider_gen/divider_generator.vhd",
-        "type": 1
-      },
-      {
         "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/divider_gen_wrap.vhd",
         "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/porting_devider_gen/divider_gen_wrap.vhd",
         "type": 1
@@ -420,6 +447,11 @@
       {
         "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/divider_gen_wrap_tready.vhd",
         "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/porting_devider_gen/divider_gen_wrap_tready.vhd",
+        "type": 1
+      },
+      {
+        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/mult_33_16_wrapper.vhd",
+        "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/porting_multiplier/mult_33_16_wrapper.vhd",
         "type": 1
       },
       {
@@ -453,6 +485,11 @@
         "type": 1
       },
       {
+        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_mult_33_16.vhd?@work_quartus/tb",
+        "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_mult_33_16.vhd",
+        "type": 1
+      },
+      {
         "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/xpm_fifo_async_wrap.vhd",
         "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/src/rtl/xpm_fifo/xpm_fifo_async_wrap.vhd",
         "type": 1
@@ -470,6 +507,11 @@
       {
         "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_divider_gen_with_tready.vhd",
         "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/tb/tb_divider_gen_with_tready.vhd",
+        "type": 1
+      },
+      {
+        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_mult_33_16.vhd?@work_vivado/tb",
+        "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/tb/tb_mult_33_16.vhd",
         "type": 1
       },
       {
@@ -556,6 +598,18 @@
           "work"
         ],
         "work_quartus/tb/tb_lpm_divider_tready.vhd": [
+          "work"
+        ],
+        "work_vivado/tb/tb_mult_33.16.vhd": [
+          "work"
+        ],
+        "work_vivado/tb/tb_mult_33_16.vhd": [
+          "work"
+        ],
+        "work_quartus/tb/tb_mult_33_16.vhd": [
+          "work"
+        ],
+        "work_quartus/src/rtl/porting_multiplier/mult_33_16_wrapper.vhd": [
           "work"
         ]
       },

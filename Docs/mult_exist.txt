@@ -1,0 +1,6 @@
+FREQ_ERR_CORR  -- Matlab Generated Code
+FREQ_ERR_EST   -- IP-- this is a Complex Multiplier
+DAGC           -- Matlab Generaed Code
+EQUIALIZER     -- IP
+
+-- at the Demodulator these were there as the used Multiplier instanaces.

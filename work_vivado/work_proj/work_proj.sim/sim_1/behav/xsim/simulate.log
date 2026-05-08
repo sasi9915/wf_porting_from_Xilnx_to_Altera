@@ -1,4 +1,0 @@
-Vivado Simulator 2020.1
-Time resolution is 1 ps
-Note: Single async FWFT test passed. Wrote and read value 15
-Time: 2100 ns  Iteration: 1  Process: /tb_xpm_async_wrap/single_wr_rd_proc  File: /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/tb/tb_xpm_async_wrap.vhd
