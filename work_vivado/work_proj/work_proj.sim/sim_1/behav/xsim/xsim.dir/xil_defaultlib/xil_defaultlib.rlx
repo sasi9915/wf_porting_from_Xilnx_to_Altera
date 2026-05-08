@@ -2,6 +2,5 @@
 2020.1
 May 27 2020
 19:59:15
-/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/src/rtl/xpm_fifo/xpm_fifo_async_wrap.vhd,1777870478,vhdl,/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/tb/tb_xpm_async_wrap.vhd,,,xpm_fifo_async_wrap,,,,,,,,
-/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/tb/tb_xpm_async_wrap.vhd,1778125455,vhdl,,,,tb_xpm_async_wrap,,,,,,,,
-/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/work_proj/work_proj.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/tb/tb_mult_33_16.vhd,1778219004,vhdl,,,,tb_mult_33_16,,,,,,,,
+/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/work_proj/work_proj.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd,1778215571,vhdl,/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/tb/tb_mult_33_16.vhd,,,mult_gen_0,,,,,,,,

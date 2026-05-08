@@ -1,7 +1,7 @@
 1 19 lpm_hint_evaluation 4 fast 64 /home/sasindu/altera_lite/25.1std/questa_fse/intel/vhdl/220model 0 80 0 0 118 0
 1 14 lpm_components 4 fast 64 /home/sasindu/altera_lite/25.1std/questa_fse/intel/vhdl/220model 0 80 0 0 1144 0
 1 19 lpm_hint_evaluation 4 body 64 /home/sasindu/altera_lite/25.1std/questa_fse/intel/vhdl/220model 0 80 0 0 118 0
-1 10 lpm_divide 6 behave 64 /home/sasindu/altera_lite/25.1std/questa_fse/intel/vhdl/220model 1 65 0 0 813 0
-1 17 divider_generator 3 syn 111 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/work_proj/simulation/questa/rtl_work 1 65 0 0 931 0
-1 19 hfh_snr_est_divider 3 rtl 111 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/work_proj/simulation/questa/rtl_work 1 65 1024 0 1187 0
-1 14 tb_lpm_divider 3 sim 111 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/work_proj/simulation/questa/rtl_work 1 65 0 0 176 0
+1 8 lpm_mult 7 lpm_syn 64 /home/sasindu/altera_lite/25.1std/questa_fse/intel/vhdl/220model 1 65 0 0 574 0
+1 8 mult_gen 3 syn 111 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/work_proj/simulation/questa/rtl_work 1 65 0 0 662 0
+1 15 mult_33_16_wrap 3 sim 111 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/work_proj/simulation/questa/rtl_work 1 65 0 0 701 0
+1 13 tb_mult_33_16 10 behavioral 111 /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/work_proj/simulation/questa/rtl_work 1 65 0 0 300 0

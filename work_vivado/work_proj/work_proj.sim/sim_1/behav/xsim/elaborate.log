@@ -1,9 +1,8 @@
 Vivado Simulator 2020.1
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: /tools/Xilinx/vivado_2020.1/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto bd414f0ae6a04489810e06650f4000d3 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_xpm_async_wrap_behav xil_defaultlib.tb_xpm_async_wrap xil_defaultlib.glbl -log elaborate.log 
+Running: /tools/Xilinx/vivado_2020.1/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto bd414f0ae6a04489810e06650f4000d3 --incr --debug typical --relax --mt 8 -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L xil_defaultlib -L secureip -L xpm --snapshot tb_mult_33_16_behav xil_defaultlib.tb_mult_33_16 -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
-Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -12,25 +11,27 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling package xpm.vcomponents
-Compiling package vl.vl_types
-Compiling module xil_defaultlib.glbl
-Compiling module xpm.xpm_cdc_sync_rst(DEST_SYNC_FF=3,...
-Compiling module xpm.xpm_fifo_rst(COMMON_CLOCK=0,CDC_...
-Compiling module xpm.xpm_fifo_reg_bit
-Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
-Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
-Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
-Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
-Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
-Compiling module xpm.xpm_cdc_gray(DEST_SYNC_FF=3,INIT...
-Compiling module xpm.xpm_fifo_reg_vec(REG_WIDTH=11)
-Compiling module xpm.xpm_cdc_gray(DEST_SYNC_FF=5,INIT...
-Compiling module xpm.xpm_fifo_reg_vec(REG_WIDTH=12)
-Compiling module xpm.xpm_cdc_gray(DEST_SYNC_FF=3,INIT...
-Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
-Compiling module xpm.xpm_fifo_base(COMMON_CLOCK=0,FIF...
-Compiling module xpm.xpm_fifo_async(FIFO_MEMORY_TYPE=...
-Compiling architecture arc_xpm_fifo_async_wrap of entity xil_defaultlib.xpm_fifo_async_wrap [\xpm_fifo_async_wrap(1,5)\]
-Compiling architecture sim of entity xil_defaultlib.tb_xpm_async_wrap
-Built simulation snapshot tb_xpm_async_wrap_behav
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package mult_gen_v12_0_16.dsp_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(alumodereg=0,carryinreg...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=2,areg=2,b_inp...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ai_width=33,ao_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.dsp [\dsp(c_xdevicefamily="zynquplus"...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16_viv [\mult_gen_v12_0_16_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16 [\mult_gen_v12_0_16(c_xdevicefami...]
+Compiling architecture mult_gen_0_arch of entity xil_defaultlib.mult_gen_0 [mult_gen_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_mult_33_16
+Built simulation snapshot tb_mult_33_16_behav

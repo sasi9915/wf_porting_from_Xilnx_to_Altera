@@ -30,7 +30,11 @@
                 "work_vivado/tb/tb_divider_gen.vhd": "work",
                 "work_quartus/tb/tb_lpm_divider.vhd": "work",
                 "work_vivado/tb/tb_divider_gen_with_tready.vhd": "work",
-                "work_quartus/tb/tb_lpm_divider_tready.vhd": "work"
+                "work_quartus/tb/tb_lpm_divider_tready.vhd": "work",
+                "work_vivado/tb/tb_mult_33.16.vhd": "work",
+                "work_vivado/tb/tb_mult_33_16.vhd": "work",
+                "work_quartus/tb/tb_mult_33_16.vhd": "work",
+                "work_quartus/src/rtl/porting_multiplier/mult_33_16_wrapper.vhd": "work"
             }
         }
     }

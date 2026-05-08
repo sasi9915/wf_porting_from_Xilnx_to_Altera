@@ -6,17 +6,17 @@
       "library": "work",
       "resources": [
         {
-          "path": "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/ip/divider_gen/divider_generator.vhd",
-          "hdlVersion": "VHDL 2019",
-          "kind": "COMPILE_FILE"
-        },
-        {
           "path": "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/porting_devider_gen/divider_gen_wrap.vhd",
           "hdlVersion": "VHDL 2019",
           "kind": "COMPILE_FILE"
         },
         {
           "path": "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/porting_devider_gen/divider_gen_wrap_tready.vhd",
+          "hdlVersion": "VHDL 2019",
+          "kind": "COMPILE_FILE"
+        },
+        {
+          "path": "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/porting_multiplier/mult_33_16_wrapper.vhd",
           "hdlVersion": "VHDL 2019",
           "kind": "COMPILE_FILE"
         },
@@ -51,6 +51,11 @@
           "kind": "COMPILE_FILE"
         },
         {
+          "path": "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_mult_33_16.vhd",
+          "hdlVersion": "VHDL 2019",
+          "kind": "COMPILE_FILE"
+        },
+        {
           "path": "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/src/rtl/xpm_fifo/xpm_fifo_async_wrap.vhd",
           "hdlVersion": "VHDL 2019",
           "kind": "COMPILE_FILE"
@@ -67,6 +72,11 @@
         },
         {
           "path": "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/tb/tb_divider_gen_with_tready.vhd",
+          "hdlVersion": "VHDL 2019",
+          "kind": "COMPILE_FILE"
+        },
+        {
+          "path": "/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_vivado/tb/tb_mult_33_16.vhd",
           "hdlVersion": "VHDL 2019",
           "kind": "COMPILE_FILE"
         },
