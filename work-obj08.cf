@@ -1,0 +1,7 @@
+v 4
+file . "work_quartus/src/rtl/test_altera_sync_fifo/test_lpm_sync_fifo/lpm_sync_fifo.vhd" "2a2d7c575de46767c9005c4d0b3232459cd1a362" "20260511110555.375":
+  entity lpm_sync_fifo at 1( 0) + 0 on 13;
+  architecture arc_lpm_sync_fifo of lpm_sync_fifo at 30( 1299) + 0 on 14;
+file . "work_quartus/tb/tb_lpm_sync_fifo_wrap.vhd" "42a66ddd142f08ccd97d41d6eb029ec5c44e196b" "20260511112350.105":
+  entity tb_lpm_sync_fifo_wrap at 1( 0) + 0 on 17;
+  architecture sim of tb_lpm_sync_fifo_wrap at 8( 115) + 0 on 18;

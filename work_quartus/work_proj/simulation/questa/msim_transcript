@@ -12,11 +12,14 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-# do mult_33_16_wrap_run_msim_rtl_verilog.do
+# do lpm_sync_fifo_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is sasindu@sasindu-PC.
 # vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Errors: 0, Warnings: 1
 # vmap work rtl_work
 # Questa Altera Starter FPGA Edition-64 vmap 2025.2 Lib Mapping Utility 2025.05 May 31 2025
 # vmap work rtl_work 
@@ -24,94 +27,227 @@
 # Copying /home/sasindu/altera_lite/25.1std/questa_fse/linux_x86_64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog  -work work +incdir+/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/work_proj/db {/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/work_proj/db/mult_pis.v}
-# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 12:04:40 on May 08,2026
-# vlog -reportprogress 300 -work work "+incdir+/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/work_proj/db" /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/work_proj/db/mult_pis.v 
-# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
-# -- Compiling module mult_pis
-# 
-# Top level modules:
-# 	mult_pis
-# End time: 12:04:40 on May 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/ip/multiplier/mult_gen.vhd}
+# vcom -93 -work work {/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_altera_sync_fifo/test_lpm_sync_fifo/lpm_sync_fifo.vhd}
 # Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 12:04:40 on May 08,2026
-# vcom -reportprogress 300 -93 -work work /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/ip/multiplier/mult_gen.vhd 
-# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mult_gen
-# -- Compiling architecture SYN of mult_gen
-# End time: 12:04:40 on May 08,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/porting_multiplier/mult_33_16_wrapper.vhd}
-# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 12:04:40 on May 08,2026
-# vcom -reportprogress 300 -93 -work work /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/porting_multiplier/mult_33_16_wrapper.vhd 
+# Start time: 17:28:34 on May 11,2026
+# vcom -reportprogress 300 -93 -work work /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_altera_sync_fifo/test_lpm_sync_fifo/lpm_sync_fifo.vhd 
 # ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity mult_33_16_wrap
-# -- Compiling architecture sim of mult_33_16_wrap
-# -- Loading entity mult_gen
-# End time: 12:04:41 on May 08,2026, Elapsed time: 0:00:01
+# -- Loading package altera_mf_components
+# -- Compiling entity lpm_sync_fifo
+# -- Compiling architecture arc_lpm_sync_fifo of lpm_sync_fifo
+# End time: 17:28:35 on May 11,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-vcom -reportprogress 300 -work work /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_mult_33_16.vhd
+vcom -reportprogress 300 -work work /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_lpm_sync_fifo_wrap.vhd
 # Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 12:04:52 on May 08,2026
-# vcom -reportprogress 300 -work work /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_mult_33_16.vhd 
+# Start time: 17:28:46 on May 11,2026
+# vcom -reportprogress 300 -work work /home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_lpm_sync_fifo_wrap.vhd 
 # ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity tb_mult_33_16
-# -- Compiling architecture Behavioral of tb_mult_33_16
-# -- Loading entity mult_33_16_wrap
-# End time: 12:04:53 on May 08,2026, Elapsed time: 0:00:01
+# -- Compiling entity tb_lpm_sync_fifo_wrap
+# -- Compiling architecture sim of tb_lpm_sync_fifo_wrap
+# -- Loading package altera_mf_components
+# -- Loading entity lpm_sync_fifo
+# End time: 17:28:46 on May 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.tb_mult_33_16
+vsim work.tb_lpm_sync_fifo_wrap
 # ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
-# vsim work.tb_mult_33_16 
-# Start time: 12:04:57 on May 08,2026
+# vsim work.tb_lpm_sync_fifo_wrap 
+# Start time: 17:28:53 on May 11,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.tb_mult_33_16(behavioral)#1
+# Loading altera_mf.altera_mf_components
+# Loading work.tb_lpm_sync_fifo_wrap(sim)#1
+# Loading work.lpm_sync_fifo(arc_lpm_sync_fifo)#1
 # Loading ieee.std_logic_arith(body)
-# Loading lpm.lpm_components
-# Loading lpm.lpm_hint_evaluation(body)
-# Loading work.mult_33_16_wrap(sim)#1
-add wave -position end  sim:/tb_mult_33_16/clk
-add wave -position end  sim:/tb_mult_33_16/i_a
-add wave -position end  sim:/tb_mult_33_16/i_b
-add wave -position end  sim:/tb_mult_33_16/o_p
-add wave -position end  sim:/tb_mult_33_16/r_expected_array
-add wave -position end  sim:/tb_mult_33_16/r_expected_next
-add wave -position end  sim:/tb_mult_33_16/r_expected_valid
-add wave -position end  sim:/tb_mult_33_16/r_valid_array
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.scfifo(behavior)#1
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/done_reported
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/i_clk
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/i_data
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/i_rdreq
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/i_resetn
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/i_wrreq
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/latency
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/max_usedw
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/o_almost_empty
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/o_almost_full
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/o_empty
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/o_full
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/o_q
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/o_q_val
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/o_usedw
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/read_count
+add wave -position end  sim:/tb_lpm_sync_fifo_wrap/write_count
+# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: sasindu  Hostname: sasindu-PC  ProcessID: 42402
+#           Attempting to use alternate WLF file "./wlftDbYh4H".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftDbYh4H
 run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_mult_33_16/dut/u_mult/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_mult_33_16/dut/u_mult/lpm_mult_component
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_mult_33_16/dut/u_mult/lpm_mult_component
-run
-run
-# ** Note: Simulation Finished Successfully
-#    Time: 250 ns  Iteration: 1  Instance: /tb_mult_33_16
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
 run
 run
 run
-# End time: 12:26:47 on May 08,2026, Elapsed time: 0:21:50
-# Errors: 0, Warnings: 3
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: Latency = 0
+#    Time: 1120 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 12
+#    Time: 1140 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 14
+#    Time: 1160 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 16
+#    Time: 1180 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 18
+#    Time: 1200 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+run
+# ** Note: Latency = 20
+#    Time: 1220 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 22
+#    Time: 1240 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 24
+#    Time: 1260 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 26
+#    Time: 1280 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 28
+#    Time: 1300 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+run
+# ** Note: Latency = 30
+#    Time: 1320 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 32
+#    Time: 1340 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 34
+#    Time: 1360 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 36
+#    Time: 1380 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 38
+#    Time: 1400 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+run
+# ** Note: Latency = 40
+#    Time: 1420 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 42
+#    Time: 1440 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 44
+#    Time: 1460 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 46
+#    Time: 1480 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 48
+#    Time: 1500 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+run
+# ** Note: Latency = 50
+#    Time: 1520 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 52
+#    Time: 1540 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 54
+#    Time: 1560 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 56
+#    Time: 1580 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 58
+#    Time: 1600 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+run
+# ** Note: Latency = 60
+#    Time: 1620 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 62
+#    Time: 1640 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 64
+#    Time: 1660 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 66
+#    Time: 1680 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 68
+#    Time: 1700 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+run
+# ** Note: Latency = 70
+#    Time: 1720 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 72
+#    Time: 1740 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 74
+#    Time: 1760 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 76
+#    Time: 1780 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 78
+#    Time: 1800 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+run
+# ** Note: Latency = 80
+#    Time: 1820 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 82
+#    Time: 1840 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 84
+#    Time: 1860 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 86
+#    Time: 1880 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 88
+#    Time: 1900 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+run
+# ** Note: Latency = 90
+#    Time: 1920 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 92
+#    Time: 1940 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 94
+#    Time: 1960 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 96
+#    Time: 1980 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 98
+#    Time: 2 us  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+run
+# ** Note: Latency = 100
+#    Time: 2020 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 102
+#    Time: 2040 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 104
+#    Time: 2060 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 106
+#    Time: 2080 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Latency = 108
+#    Time: 2100 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: TB done. Writes accepted=50, reads accepted=50
+#    Time: 2100 ns  Iteration: 1  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: =================================
+#    Time: 2100 ns  Iteration: 2  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Simulation Summary:
+#    Time: 2100 ns  Iteration: 2  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Total cycles = 111
+#    Time: 2100 ns  Iteration: 2  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Writes = 50
+#    Time: 2100 ns  Iteration: 2  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Reads  = 50
+#    Time: 2100 ns  Iteration: 2  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: Max FIFO usage = 25
+#    Time: 2100 ns  Iteration: 2  Instance: /tb_lpm_sync_fifo_wrap
+# ** Note: =================================
+#    Time: 2100 ns  Iteration: 2  Instance: /tb_lpm_sync_fifo_wrap
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
