@@ -1,3 +1,28 @@
 # Ignore generated Vivado/Quartus project work directories
 work_vivado/work_proj/
 work_quartus/work_proj/
+
+
+# Sigasi generated files
+.sigasi/generated/
+
+# Questa/ModelSim waveform databases
+*.wlf
+
+# Quartus simulation generated files
+transcript
+vsim_stacktrace.vstf
+modelsim.ini
+
+# Quartus db/output folders
+db/
+incremental_db/
+output_files/
+
+# # Simulation work libraries
+# work/
+# work_* /
+
+# Temporary files
+*.bak
+*.tmp
