@@ -36,7 +36,9 @@
                 "work_quartus/tb/tb_mult_33_16.vhd": "work",
                 "work_quartus/src/rtl/porting_multiplier/mult_33_16_wrapper.vhd": "work",
                 "work_quartus/src/rtl/test_altera_sync_fifo/test_lpm_sync_fifo/lpm_sync_fifo.vhd": "work",
-                "work_quartus/tb/tb_lpm_sync_fifo_wrap.vhd": "work"
+                "work_quartus/tb/tb_lpm_sync_fifo_wrap.vhd": "work",
+                "work_quartus/src/rtl/test_lpm_sync_fifo/lpm_sync_fifo.vhd": "work",
+                "work_quartus/tb/tb_lpm_sync_fifo.vhd": "work"
             }
         }
     }

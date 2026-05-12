@@ -17,11 +17,10 @@
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/lpm_async_fifo_wrap.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/intel_fifo_sync_wrap.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/lpm_sync_fifo.vhd",
-          "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_intel_sync_fifo_wrap.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_async_fifo_wrap.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_divider.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_divider_tready.vhd",
-          "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_sync_fifo_wrap.vhd",
+          "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_sync_fifo.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_mult_33_16.vhd?@work_quartus/tb",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/xpm_fifo_async_wrap.vhd",
           "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/xpm_fifo_sync_wrap.vhd",
@@ -78,11 +77,6 @@
         "version": "default",
         "target": "hdl"
       },
-      "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_intel_sync_fifo_wrap.vhd": {
-        "project": "wf_porting_from_Xilnx_to_Altera",
-        "version": "default",
-        "target": "hdl"
-      },
       "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_async_fifo_wrap.vhd": {
         "project": "wf_porting_from_Xilnx_to_Altera",
         "version": "default",
@@ -98,7 +92,7 @@
         "version": "default",
         "target": "hdl"
       },
-      "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_sync_fifo_wrap.vhd": {
+      "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_sync_fifo.vhd": {
         "project": "wf_porting_from_Xilnx_to_Altera",
         "version": "default",
         "target": "hdl"
@@ -218,12 +212,7 @@
     },
     {
       "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/lpm_sync_fifo.vhd",
-      "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_altera_sync_fifo/test_lpm_sync_fifo/lpm_sync_fifo.vhd",
-      "type": 1
-    },
-    {
-      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_intel_sync_fifo_wrap.vhd",
-      "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_intel_sync_fifo_wrap.vhd",
+      "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_lpm_sync_fifo/lpm_sync_fifo.vhd",
       "type": 1
     },
     {
@@ -242,8 +231,8 @@
       "type": 1
     },
     {
-      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_sync_fifo_wrap.vhd",
-      "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_lpm_sync_fifo_wrap.vhd",
+      "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_sync_fifo.vhd",
+      "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_lpm_sync_fifo.vhd",
       "type": 1
     },
     {
@@ -328,11 +317,6 @@
       "version": "VHDL 2019",
       "isLibraryFile": false
     },
-    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_intel_sync_fifo_wrap.vhd": {
-      "library": null,
-      "version": "VHDL 2019",
-      "isLibraryFile": false
-    },
     "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_async_fifo_wrap.vhd": {
       "library": null,
       "version": "VHDL 2019",
@@ -348,7 +332,7 @@
       "version": "VHDL 2019",
       "isLibraryFile": false
     },
-    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_sync_fifo_wrap.vhd": {
+    "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_sync_fifo.vhd": {
       "library": null,
       "version": "VHDL 2019",
       "isLibraryFile": false
@@ -498,12 +482,7 @@
       },
       {
         "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/lpm_sync_fifo.vhd",
-        "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_altera_sync_fifo/test_lpm_sync_fifo/lpm_sync_fifo.vhd",
-        "type": 1
-      },
-      {
-        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_intel_sync_fifo_wrap.vhd",
-        "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_intel_sync_fifo_wrap.vhd",
+        "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/src/rtl/test_lpm_sync_fifo/lpm_sync_fifo.vhd",
         "type": 1
       },
       {
@@ -522,8 +501,8 @@
         "type": 1
       },
       {
-        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_sync_fifo_wrap.vhd",
-        "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_lpm_sync_fifo_wrap.vhd",
+        "source": "platform:/resource/wf_porting_from_Xilnx_to_Altera/Targets/hdl/work/tb_lpm_sync_fifo.vhd",
+        "target": "file:///home/sasindu/work/wf_porting/wf_porting_from_Xilnx_to_Altera/work_quartus/tb/tb_lpm_sync_fifo.vhd",
         "type": 1
       },
       {
@@ -658,6 +637,12 @@
           "work"
         ],
         "work_quartus/tb/tb_lpm_sync_fifo_wrap.vhd": [
+          "work"
+        ],
+        "work_quartus/src/rtl/test_lpm_sync_fifo/lpm_sync_fifo.vhd": [
+          "work"
+        ],
+        "work_quartus/tb/tb_lpm_sync_fifo.vhd": [
           "work"
         ]
       },
