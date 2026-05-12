@@ -76,7 +76,7 @@ begin
     scfifo_component : scfifo
         generic map(
             add_ram_output_register => "OFF",
-            allow_rwcycle_when_full => "OFF",
+            allow_rwcycle_when_full => "ON",
             almost_empty_value      => g_ALMOST_EMPTY_THRESHOLD,
             almost_full_value       => g_ALMOST_FULL_THRESHOLD,
             intended_device_family  => "Cyclone V",
@@ -98,7 +98,7 @@ begin
             data         => i_data,
             empty        => w_empty,
             full         => o_full,
-            q            => w_q,
+            q            => o_q,
             rdreq        => i_rdreq,
             sclr         => w_reset,
             usedw        => w_usedw,
@@ -115,7 +115,6 @@ begin
     end process;
 
     o_q_val <= i_rdreq and not (w_empty) when (g_FWFT_MODE_ENA) else r_q_val;
-    o_q     <= w_q when ((g_FWFT_MODE_ENA and (w_empty = '0')) or ((not g_FWFT_MODE_ENA) and (r_q_val = '1'))) else (others => '0');
     o_usedw <= std_logic_vector(resize(unsigned(w_usedw), 16));
     o_empty <= w_empty;
 

@@ -19,10 +19,29 @@ db/
 incremental_db/
 output_files/
 
-# # Simulation work libraries
-# work/
-# work_* /
+
 
 # Temporary files
 *.bak
 *.tmp
+
+
+# Sigasi generated files
+.sigasi/generated/
+
+# Questa / ModelSim generated files
+*.wlf
+msim_transcript
+transcript
+
+# Questa optimized libraries
+*_opt/
+*.qdb
+*.qpg
+*.qtl
+
+# Questa viscom files
+.viscom*
+.env_list_file
+dulist
+

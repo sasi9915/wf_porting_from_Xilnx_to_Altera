@@ -2,10 +2,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity tb_lpm_sync_fifo_wrap is
+entity tb_lpm_sync_fifo is
 end entity;
 
-architecture sim of tb_lpm_sync_fifo_wrap is
+architecture sim of tb_lpm_sync_fifo is
 
     function f_is_write_gap_value(value : natural) return boolean is
     begin
@@ -34,7 +34,7 @@ architecture sim of tb_lpm_sync_fifo_wrap is
     signal read_count    : natural   := 0;
     signal done_reported : std_logic := '0';
 
-    ---monitor signlas
+    ---monitor signlas 
 
     signal cycle_count        : natural := 0;
     signal input_count        : natural := 0;
@@ -51,7 +51,7 @@ begin
 
     dut : entity work.lpm_sync_fifo
         generic map(
-            g_DATA_WIDTH => g_DATA_WIDTH
+            g_DATA_WIDTH    => g_DATA_WIDTH  
         )
         port map(
             i_clk          => i_clk,
@@ -68,6 +68,7 @@ begin
             o_almost_empty => o_almost_empty
         );
 
+
     -- clock generation
 
     clk_gen : process
@@ -78,7 +79,7 @@ begin
         wait for CLK_PERIOD / 2;
     end process;
 
-    -- reset
+    -- reset 
     rst_gen : process
     begin
         i_resetn <= '0';
@@ -87,7 +88,9 @@ begin
         wait;
     end process;
 
-    ------------------------------------------- *NOTE ----------------------------------------------------
+
+
+    ------------------------------------------- *NOTE ----------------------------------------------------  
     ------------------ PLEASE UNCOMMNET THE (SINGLE WR_RD TEST )  BEFORE DO THE BELOW TEST ---------------
     -------------------------------------------------------------------------------------------------------
 
@@ -247,11 +250,13 @@ begin
         wait;
     end process;
 
+
     --------------------------------------------* NOTE ----------------------------------------------------
     ------------------ PLEASE UNCOMMNET THE ALL OF THE CODES BEFORE DO THE BELOW TEST ---------------------
     -------------------------------------------------------------------------------------------------------
 
-    -- ------ *sigle write and Read test
+
+    ------ *sigle write and Read test
 
     -- single_wr_rd_proc : process
     --     variable latency_cycles_v : natural := 0;
